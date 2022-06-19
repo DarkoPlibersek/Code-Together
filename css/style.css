@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    text-align: center;
+
+}
+nav div{
+    width: 10%;
+}
+nav .navButtons{
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: green;
+}
+.navButtons div {
+    width: 33%;
+}
+a{
+    text-decoration: none;
+}
+#ProfilePicture{
+    width: 80px;
+    margin: 10px;
+}
