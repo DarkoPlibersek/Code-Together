@@ -3,29 +3,54 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+ body {
+    background-color: aliceblue;
+ }
+/*#region Navigation Bar*/
+
 nav{
     display: flex;
     flex-direction: row;
-    background-color: red;
     text-align: center;
-
+    border-bottom: 2px solid black;
 }
 nav div{
     width: 10%;
+    background-color: white;
 }
 nav .navButtons{
     display:flex;
     flex-direction: row;
     width: 80%;
-    background-color: green;
 }
 .navButtons div {
     width: 33%;
+    margin-top: 2px;
 }
-a{
+.navButtons a{
     text-decoration: none;
+    height: min-content;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.navButtons a:hover{
+    background-color: rgb(0, 112, 218);
 }
 #ProfilePicture{
-    width: 80px;
+    width: 50px;
     margin: 10px;
+    background-color: white;
 }
+
+#eAsistentLogo{
+    width: 80%;
+    margin: 20px;
+    background-color: white;
+}
+/*#endregion Navigation Bar*/

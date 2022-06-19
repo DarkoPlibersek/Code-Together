@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jsečo selzs selhhse- pkujgses </title> 
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo">img</div>
-        <div class="navButtons">
-            <div><a href="">Button</a></div>
-            <div><a href="">Button</a></div>
-            <div><a href="">Button</a></div>
-        </div>
-        <div class="profile"><img src="./image/profile.png" alt="profile Picture" id="ProfilePicture"></div>
-    </nav>
+    <form action="./php/prijava.php" method="POST">        
+        <table>
+            <tr>
+                <td><label for="mail">E-mail: </label></td>
+                <td><input type="text" name="mail" id="mail"><br></td>
+            </tr>
+            <tr>
+                <td><label for="geslo">Geslo: </label></td>
+                <td><input type="password" name="geslo" id="geslo"><br></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Potrdi">
+    </form>
 </body>
 </html>
