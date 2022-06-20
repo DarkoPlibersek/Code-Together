@@ -1,0 +1,27 @@
+.frameADMIN{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    width: 100%;
+}
+.divLink{
+    border-radius: 100%;
+    margin: 10%;
+    padding: 50px;
+    width: 50%;
+    background-color: red;
+    text-align: center;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 100px;
+    padding: 20px;
+}
+
+.link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+}
+

@@ -16,7 +16,7 @@
         <div class="navButtons">
             <div><a href="./urnik.php">URNIK</a></div>
             <div><a href="./ocene.php">OCENE</a></div>
-            <div><a href="./page3.php">PAGE3</a></div>
+            <div><a href="./ADMIN.php">ADMIN</a></div>
         </div>
         <div class="profile"><img src="../image/profile.png" alt="profile Picture" id="ProfilePicture"></div>
     </nav>
@@ -53,7 +53,7 @@
                     do{
                         $r = 0;
                         do{
-                            $rand = rand(1, 10);
+                            $rand = rand(1, 9);
                             $idSame = "SELECT * FROM urnik WHERE id = '$rand'";
                             $rowTrue = mysqli_fetch_assoc(mysqli_query($conn, $idSame));
                             if ($rowTrue['id'] == 1){
@@ -61,6 +61,8 @@
                             }else {
                                 $color = $rowTrue['id'];
                                 switch ($color) {
+                                    case 1:
+                                        break;
                                     case 2:
                                         echo "<td class='ena'><div class ='uraID'> " .$rowTrue['ura']. "</div>".$rowTrue['profesor']."<br> ".$rowTrue['razred']."</td>";
                                         break;
@@ -88,9 +90,7 @@
                                     case 10:
                                         echo "<td class='devet'><div class ='uraID'> " .$rowTrue['ura']. "</div>".$rowTrue['profesor']."<br> ".$rowTrue['razred']."</td>";
                                         break;
-                                    case 11:
-                                        echo "<td class='deset'><div class ='uraID'> " .$rowTrue['ura']. "</div>".$rowTrue['profesor']."<br> ".$rowTrue['razred']."</td>";
-                                        break;
+                                    
                                 }
                             }
                             $r++;

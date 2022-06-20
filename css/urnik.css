@@ -1,8 +1,6 @@
 .frameTable{
     margin: 1%;
     padding: 2%;
-    border: 2px solid black;
-    background-color: aqua;
     display: flex;
     font-weight: bold;
 }
@@ -26,3 +24,4 @@ th, td{
 .osem{ background-color: rgb(197, 250, 6);}
 .devet{ background-color: rgb(255, 153, 0);}
 .dedset{ background-color: rgb(255, 0, 179);}
+.ostalo{ background-color: rgb(224, 224, 224);}
